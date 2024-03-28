@@ -4,11 +4,11 @@ FROM ghcr.io/linuxserver/baseimage-kasmvnc:debianbookworm
 ARG BUILD_DATE
 ARG PP_VERSION
 ARG VERSION
-# LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-# LABEL maintainer="thelamer"
+LABEL build_version="Duarte Ferreira Version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL maintainer="dngferreira"
 
 # title
-# ENV TITLE=VSCodium
+ENV TITLE=PortfolioPerformance
 
 RUN \
   echo "**** install packages ****" && \
